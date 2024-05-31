@@ -9,6 +9,10 @@
   transition: transform 0.3s;
   // backface-visibility: hidden;
 
+  @include respond(tabPort) {
+    padding: 2rem;
+  }
+
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
@@ -26,5 +30,9 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+
+    @include respond(tabPort) {
+      margin-bottom: 0;
+    }
   }
 }
